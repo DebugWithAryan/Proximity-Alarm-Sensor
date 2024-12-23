@@ -64,14 +64,12 @@ void setup() {
 void loop() {
   long duration, distance;
 
-  // Send a 10µs pulse to the Trig pin
   digitalWrite(TRIG_PIN, LOW);
   delayMicroseconds(2);
   digitalWrite(TRIG_PIN, HIGH);
   delayMicroseconds(10);
   digitalWrite(TRIG_PIN, LOW);
 
-  // Read the Echo pin, and calculate the distance
   duration = pulseIn(ECHO_PIN, HIGH);
   distance = duration * 0.034 / 2;
 
@@ -79,13 +77,12 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cm");
 
-  // Check if the object is within 10 cm
   if (distance > 0 && distance <= 10) {
-    digitalWrite(LED_PIN, HIGH); // Turn on LED
-    digitalWrite(BUZZER_PIN, HIGH); // Turn on Buzzer
+    digitalWrite(LED_PIN, HIGH); 
+    digitalWrite(BUZZER_PIN, HIGH);
   } else {
-    digitalWrite(LED_PIN, LOW); // Turn off LED
-    digitalWrite(BUZZER_PIN, LOW); // Turn off Buzzer
+    digitalWrite(LED_PIN, LOW); 
+    digitalWrite(BUZZER_PIN, LOW); 
   }
 
   delay(100); // Small delay to stabilize readings
