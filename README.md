@@ -39,7 +39,7 @@ This project implements a **Proximity Alarm Sensor** using an Arduino UNO, an ul
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/proximity-alarm-sensor.git
+   git clone https://github.com/DebugWithAryan/Proximity-Alarm-Sensor.git
    ```
 2. Open the Arduino IDE and upload the code to your Arduino UNO.
 3. Connect the components as per the circuit diagram.
@@ -115,7 +115,7 @@ Feel free to contribute to this project by submitting issues or pull requests.
 - Inspired by various Arduino proximity sensor projects available online.
 
 ## Contact
-For any queries or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
+For any queries or feedback, please contact [your-email@example.com](mailto:aryanjaiswal123123@gmail.com).
 
 ---
 Happy Coding!
